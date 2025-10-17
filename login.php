@@ -19,6 +19,7 @@ $data = $_SESSION['data'];
 
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -94,6 +95,7 @@ $data = $_SESSION['data'];
         }
     </style>
 </head>
+
 <body>
     <div class="dashboard-card">
         <img src="https://unnes.ac.id/lppm/wp-content/uploads/sites/16/2023/02/logo-unnes-horizontal-white-yellow.png" alt="Logo UNNES">
@@ -102,8 +104,9 @@ $data = $_SESSION['data'];
         <a href="logout.php" class="btn btn-logout">Logout</a>
 
         <div class="data-box mt-3">
-            <pre><?php print_r($data); ?></pre>
+            <pre><?php var_dump($data); ?></pre>
         </div>
     </div>
 </body>
+
 </html>
